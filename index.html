@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="container-name">
+                    <h1>CALCULATOR BY MEL ALEJANDRINO</h1>
+                </div>
+                <div class="container-input">
+                    <input type="text" name="numberbox" id="numberBox" oninput="this.value = this.value.replace(/[^0-9]/g, '');" placeholder="0">
+                <div class="container-buttons">
+                    <div class="numbers">   
+                        <div class="container-row1">
+                            <button id="numOne" value="1">1</button>
+                            <button id="numTwo" value="2">2</button>
+                            <button id="numThree" value="3">3</button>
+                        </div>
+
+                        <div class="container-row2">
+
+                            <button id="numFour" value="4">4</button>
+                            <button id="numFive" value="5">5</button>
+                            <button id="numSix" value="6">6</button>
+                        </div>
+
+                        <div class="container-row3">
+                            <button id="numSeven" value="7">7</button>
+                            <button id="numEight" value="8">8</button>
+                            <button id="numNine" value="9">9</button>
+                        </div>
+
+                        <div class="container-row4">
+                            <button id="numZero" value="0">0</button>
+                        </div>
+                        
+                    </div>
+                    <div class="operators">
+                        <div class="container-row1">
+                            <button id="opAdd" onclick="add()" value="+">+</button>
+                            <button id="opSub" onclick="subtraction()" value="-">-</button>
+                        </div>
+                        
+                        <div class="container-row2">
+                            <button id="opDiv" onclick="division()" value="/">/</button>
+                            <button id="opMult" onclick="multiplication()" value="*">*</button>
+                        </div>
+                        
+                        <div class="container-row3">
+                            <button id="clearButton">CLR</button>
+                            <button id="equals" value="=">=</button>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="note">
+                    <p>*each input after clicking an operator should be followed 
+                        <br>
+                        by the equal button like 12*3=</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
