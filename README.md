@@ -1,2 +1,3 @@
 # R7---Quiz-2
-# GO TO MASTER BRANCH MISS
+<p>My JS-CALCULATOR FOR MY QUIZ</p>
+<p>Input should only be like 1+1=</p>
